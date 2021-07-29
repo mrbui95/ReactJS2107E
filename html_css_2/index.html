@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS 2</title>
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        ul,
+        li {
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+
+        ul {
+            background-color: black;
+        }
+
+        li {
+          display: inline-block;
+          padding: 10px;  
+        }
+
+        li>a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- p, heading -->
+    <!-- <h1>HTML/CSS Heading 1</h1>
+    <h2>HTML/CSS Heading 2</h2>
+    <h3>HTML/CSS Heading 3</h3>
+    <h4>HTML/CSS Heading 4</h4>
+    <h5>HTML/CSS Heading 5</h5>
+    <h6>HTML/CSS Heading 6</h6>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum ipsa illo similique dolorem, in adipisci et aut vel, doloremque molestiae eveniet porro ipsum fugit eligendi cupiditate ullam officiis praesentium temporibus!</p> -->
+
+    <!-- Format -->
+    <!-- <b>Thẻ b</b>
+    <strong>Thẻ strong - Dùng cho SEO</strong>
+
+    <i>Thẻ i</i>
+    <em>Thẻ em - Dùng cho SEO</em> -->
+
+    <!-- <small>Thẻ small</small>
+
+    <mark>Thẻ Mark</mark>
+
+    <del>Thẻ delete</del>
+    <ins>Thẻ inserted</ins>
+    <sub>Thẻ sub</sub>
+    <sup>Thẻ sup</sup>
+
+
+    <p>Công thức hoá học của nước là H<sub>2</sub>O</p>
+    <p>Hằng đăng thức số 3: a<sup>2</sup> - b<sup>2</sup> = (a + b)(a - b)</p> -->
+
+
+    <!-- Image -->
+    <!-- src=source alt=alternative -->
+
+    <!-- External Link -->
+    <!-- <p><img src="https://i1-kinhdoanh.vnecdn.net/2021/07/25/8-2556-1626538754-jpeg-1627195-2527-6017-1627196037.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=L9XWfRaEZd_-F_REqGySfg" alt="background-image"></p>
+    <p><img src="test-https://i1-kinhdoanh.vnecdn.net/2021/07/25/8-2556-1626538754-jpeg-1627195-2527-6017-1627196037.jpg?w=120&h=72&q=100&dpr=2&fit=crop&s=L9XWfRaEZd_-F_REqGySfg" alt="background-image"></p> -->
+
+    <!-- Internal Link -->
+    <!-- relative path -->
+    <!-- <p><img src="./images/background.jpg" alt="background-image"></p>
+    <p><img src="./images/background-loi.jpg" alt="background-image-loi"></p> -->
+    <!-- absolute path -->
+    <!-- <p><img src="html_css_2\images\background.jpg" alt="background-image-absolute"></p> -->
+
+    <!-- Link  -->
+    <!-- href=hyperlink reference -->
+    <!-- <a href="https://vnexpress.net/bo-tai-chinh-de-xuat-them-goi-ho-tro-covid-19-khoang-24-000-ty-4330271.html">Bộ Tài chính đề xuất thêm gói hỗ trợ Covid-19 khoảng 24.000 tỷ</a>
+    <p><a href="./about.html">About page</a></p>
+    <p><a href="./about.html" target="_self">About page Self</a></p>
+    <p><a href="./about.html" target="_blank">About page Blank</a></p>
+    <p><a href="#mark">NEO Mark</a></p> -->
+    <!-- mark in page -->
+    <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident accusamus fuga voluptatum excepturi iusto expedita eos deserunt illum quisquam, laborum, dolores molestiae dignissimos nostrum! Placeat dicta nesciunt mollitia magni iure.</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p id="mark">NEO</p>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <p><mark>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia accusamus, natus facilis quaerat unde voluptates inventore voluptatem, earum ipsum omnis iusto repellat ab sit quo eaque, quisquam quidem pariatur itaque.</mark></p> -->
+
+    <!-- List -->
+    <!-- unorder list -->
+    <!-- <ul style="list-style-type:lower-alpha;">
+        <li>Home
+            <ul>
+                <li><a href="">Introduce</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Content</a></li>
+            </ul>
+        </li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul> -->
+    <!-- order list -->
+    <!-- <ol style="list-style-type: lower-roman;">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ol> -->
+
+
+    <!-- Table -->
+    <!-- <table>
+        <thead>
+            <tr>
+                <th colspan="3">Information</th>
+            </tr>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Address</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Huu Thanh</td>
+                <td rowspan="2">Ha Noi</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Van Truong</td> -->
+                <!-- <td>Ha Noi</td> -->
+            <!-- </tr>
+        </tbody>
+        <caption>Student Informations</caption>
+    </table> -->
+
+    <!-- Layout -->
+    <!-- span, div -->
+    <!-- <span>content - inline</span>
+    <div>content - block</span>
+
+    <div id="header">Header</div>
+    <div id="section">Section</div>
+    <div id="footer">Footer</div> -->
+
+    <!-- header, section, footer => bản chất là thẻ div -->
+
+    <!-- <header>
+        Header
+    </header>
+    <section>
+        <nav>
+            <ul style="list-style-type:lower-alpha;">
+                <li>Home
+                    <ul>
+                        <li><a href="">Introduce</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Content</a></li>
+                    </ul>
+                </li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <article>
+            <h3>Title</h3>
+            <p>Description</p>
+        </article>
+        Body
+    </section>
+    <footer>
+        Footer
+    </footer> -->
+
+
+    <!-- Form -->
+    <!-- method: GET|POST|PUT|DELETE -->
+    <!-- <form method="POST" action="./login.php">
+        <label for="username">Username</label>
+        <input id="username" type="text" name="username">
+        <br>
+        <label for="password">Password</label>
+        <input id="password" type="password" name="password">
+        <br>
+        <label for="number">Phone</label>
+        <input id="number" type="number" name="phone" min="1" max="10" required>
+        <br>
+        <select name="month" id="month">
+            <option value="0">--Select Month--</option>
+            <optgroup label="Spring">
+                <option value="1">Month 1</option>
+                <option value="2">Month 2</option>
+                <option value="3">Month 3</option>
+            </optgroup>
+            <optgroup label="Summer">
+                <option value="4">Month 4</option>
+                <option value="5">Month 5</option>
+                <option value="6">Month 6</option>
+            </optgroup>
+            <optgroup label="Autumn">
+                <option value="7">Month 7</option>
+                <option value="8">Month 8</option>
+                <option value="9">Month 9</option>
+            </optgroup>
+            <optgroup label="Winter">
+                <option value="10">Month 10</option>
+                <option value="11">Month 11</option>
+                <option value="12">Month 12</option>
+            </optgroup>
+        </select>
+        <br>
+        <label for="male">Male</label>
+        <input id="male" type="radio" name="gender" checked>
+        <label for="female">Female</label>
+        <input id="female" type="radio" name="gender">
+        <br>
+        <label for="policy">Do you agree with policy!</label>
+        <input id="policy" type="checkbox">
+        <br>
+        <button>Login</button> -->
+        <!-- <input type="button" value="Login"> -->
+    <!-- </form> -->
+
+    <header>
+        Header
+    </header>
+    <section>
+        <nav>
+            <ul style="list-style-type:lower-alpha;">
+                <li>
+                    Home
+                    <ul>
+                        <li><a href="">Introduce</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Content</a></li>
+                    </ul>
+                </li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <article>
+            <h3>Title</h3>
+            <p>Description</p>
+        </article>
+        Body
+    </section>
+    <footer>
+        Footer
+    </footer>
+
+
+</body>
+</html>

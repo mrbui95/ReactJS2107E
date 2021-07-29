@@ -1,0 +1,95 @@
+/* @import url(./style2.css); */
+
+.bg-gray {
+    background-color: gray;
+}
+
+h3 {
+    color: green;
+    font-size: 30px;
+}
+
+.first-h3 {
+    color: blue;
+    font-size: 30px;
+}
+
+#second-h3 {
+    color: red;
+    font-size: 30px;
+}
+
+.container .description {
+    font-size: 30px;
+}
+
+.container>section {
+    border: black solid 1px;
+}
+
+/* ~ + => dung cho the anh em (sibling) */
+
+/* chon the p ngay sau the div */
+div+p {
+    color: blue;
+}
+
+/* chon tat ca the p sau the div */
+div~p {
+    color: purple;
+}
+
+/* chon the div co class la container */
+div.container {
+    color: blue;
+}
+
+/* chon the p ngay sau the div co class la container */
+div.container+p {
+    color: gray;
+}
+
+table tr td:first-child {
+    color: red;
+}
+
+table tr td:last-child {
+    color: green;
+}
+
+table tr td:first-of-type {
+    color: red;
+}
+
+table tr td:nth-child(2) {
+    color: purple;
+}
+
+table tr td:nth-last-child(2) {
+    color: slategrey;
+}
+
+.input {
+    background-color: black;
+    color: white;
+}
+
+input:hover {
+    background-color: gray;
+}
+
+input:focus {
+    background-color: tomato;
+}
+
+a {
+    color: green;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: brown;
+}
