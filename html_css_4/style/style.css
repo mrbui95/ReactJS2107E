@@ -1,0 +1,76 @@
+.title {
+    font-family: 'Hahmlet', serif;
+    direction: ltr;
+    letter-spacing: 2px;
+    word-spacing: 10px;
+    text-indent: 0px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    text-shadow: gray 1px 1px;
+}
+
+.block {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    /* background-image: url("../media/images/background.jpg"); */
+    background-size: 400px auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block1, .block2 {
+    width: 50%;
+    height: 50px;
+    display: inline-block;
+}
+
+.block1 {
+    background-color: green;
+    margin: 0;
+    padding: 0;
+    /* float: left; */
+}
+
+.block2 {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+    /* float: right; */
+}
+
+.block2::after{
+    display: block;
+    content: "";
+    clear: both;
+}
+
+.relative {
+    width: 500px;
+    position: relative;
+    background-color: indianred;
+    top: 20px;
+    left: 50px;
+    overflow: scroll;
+    overflow: auto;
+}
+
+.absolute {
+    position: absolute;
+    background-color: yellow;
+    top: 20px;
+    left: 100px;
+}
+
+.fixed {
+    position: fixed;
+    background-color: teal;
+    bottom: 30px;
+    right: 30px;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 1086px) {
+    .relative {
+        background-color: royalblue;
+    }
+}

@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav-container {
+    background-color: black;
+    font-family: Arial, sans-serif;
+    height: 48px;
+}
+
+.nav-container .menu-icon {
+    display: none;
+}
+
+.nav-container .menu .menu-item{
+    display: inline;
+    position: relative;
+}
+
+.nav-container .menu .menu-item a{
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.nav-container .menu .menu-item a:hover {
+    background-color: #292929;
+    color: #dacb46;
+}
+
+.nav-container .menu .menu-item .sub-menu {
+    position: absolute;
+    background-color: black;
+    list-style-type: none;
+    left: 0;
+    display: none;
+}
+
+.nav-container .menu .menu-item:hover .sub-menu{
+    width: 100%;
+    display: block;
+}
+
+.nav-container .menu .menu-item .sub-menu .sub-menu-item a {
+    text-transform: none;
+    width: 100%;
+}
+
+@media only screen and (min-width: 328px) and (max-width: 768px) {
+    .nav-container {
+        text-align: right;
+    }
+
+    .nav-container .menu-icon {
+        display: inline-block;
+        margin: 5px;
+        cursor: pointer;
+    }
+
+    .nav-container .menu {
+        /* display: flex; */
+        /* display: none; */
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        background-color: black;
+        width: 0px;
+    }
+
+    .nav-container .menu.show {
+        display: flex;
+        animation: slide-in 0.5s ease 0s 1 forwards;
+    }
+
+    .nav-container .menu.hide {
+        animation: slide-out 0.5s ease 0s 1 forwards;
+    }
+
+    .nav-container .menu .menu-item {
+        display: inline-block;
+        width: 200px;
+    }
+
+    .nav-container .menu .menu-item:hover .sub-menu {
+        right: 200px;
+        top: 0px;
+        left: auto;
+    }
+
+    .nav-container .menu .menu-item a {
+        width: 200px;
+    }
+    
+}
+
+@keyframes slide-in {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 200px;
+    }
+}
+
+@keyframes slide-out {
+    from {
+        width: 200px;
+    }
+    to {
+        width: 0px;
+    }
+}

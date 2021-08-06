@@ -14,11 +14,24 @@
     font-weight: bolder;
     margin: 20px;
     border-bottom: 1px solid gray;
+    color: #1f8350;
+}
+
+.login-container label {
+    display: inline-block;
+    width: 90px;
 }
 
 .login-container input {
+    border: 1px solid black;
     margin: 10px;
     height: 20px;
+}
+
+.login-container input:focus {
+    outline: none;
+    border: 1px solid #1f8350;
+    background-color: #f1fdf7;
 }
 
 .login-container .submit {

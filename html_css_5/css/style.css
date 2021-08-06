@@ -1,0 +1,81 @@
+.block {
+    width: 200px;
+    height: 200px;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-blue {
+    background-color: blue;
+    transition: width 1s, height 1s;
+}
+
+/* transform */
+.transform {
+    /* transform: translate(20px, 30px); */
+    /* transform: rotate(45deg); */
+    /* transform: scale(0.5, 1.5); */
+    /* transform: translate(20px, 30px) rotate(45deg) scale(1.5) */
+}
+
+/* transition, animation */
+.bg-blue:hover {
+    width: 1000px;
+    height: 300px;
+    transition: width ease 2s 1s, height ease 1s;
+    /* transition: property, [mode], [delay], duration */
+}
+
+.bg-red {
+    position: relative;
+    left: 400px;
+    /* animation: move-right 1s ease-in-out 0s infinite forwards; */
+    /* animation: move-around 5s ease-in-out 0s infinite forwards; */
+}
+
+@keyframes move-right {
+    from {
+        left: 0px;
+    }
+    to {
+        left: 400px;
+    }
+}
+
+@keyframes move-around {
+    0% {
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+    }
+    25% {
+        left: 0px;
+        top: 400px;
+        transform: scale(1.5);
+    }
+    50% {
+        left: 400px;
+        top: 400px;
+        transform: scale(1);
+    }
+    75% {
+        left: 400px;
+        top: 0px;
+        transform: scale(0.5);
+    }
+    100% {
+        left: 0px;
+        top: 0px;
+        transform: scale(1);
+    }
+}
+
+.search {
+    width: 200px;
+}
+
+.search:hover {
+    width: 300px;
+}
