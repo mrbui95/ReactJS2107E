@@ -4,12 +4,12 @@
 }
 
 .container .body-content .body-image {
-    display: inline-block;
+    float: left;
     width: 30%;
 }
 
 .container .body-content .body-text-content {
-    display: inline-block;
+    float: left;
 }
 
 .container .body-content .body-text-content .content-info {
