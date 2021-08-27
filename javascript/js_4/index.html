@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div id="js-container" class="js-container">
+        <h3 id="js-first-title" class="js-first-title">Hello Class 1</h3>
+        <h3 id="js-second-title" class="js-first-title">Hello Class 2</h3>
+        <h3 id="js-third-title" class="js-first-title">Hello Class 3</h3>
+
+        <button onclick="alert('Alert 1')">Click 1</button>
+        <button onclick="onUserClick2()">Click 2</button>
+        <button class="js-btn-click">Click 3</button>
+        <br>
+        <div class="js-clock">
+            <label >Current time:</label>
+            <br>
+            <b class="js-clock-timer"></b>
+        </div>
+
+        <div class="js-stopwatch">
+            <label>Time run:</label>
+            <b class="js-time-runner">00:00:00</b>
+            <button class="js-btn-start-stop" onclick="onStartStopClick()">Start</button>
+            <button class="js-btn-reset" onclick="onResetClick()">Reset</button>
+        </div>
+    </div>
+    
+    <script src="./js/index.js"></script>
+</body>
+</html>

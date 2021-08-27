@@ -51,3 +51,8 @@ let student1 = {
     name: 'student1',
     age: 24,
 }
+
+let student2 = {
+    ...student
+}
+
